@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+
+
     <style>
         body {
             margin: 0;
@@ -11,14 +13,16 @@
         }
 
         .header {
-            
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 200px; /* Adjusted padding */
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px; /* Adjusted padding */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
         .header .logo {
             color: rgba(0, 0, 0, .65);
@@ -275,7 +279,7 @@
         }
         .right-container {
             background-color: #4caf50; /* Green background */
-            border-radius: 10px; /* Rounded corners */
+            border-radius: 10px;; /* Rounded corners */
              /* Padding inside the container */
             margin-top: 20px; /* Space above the container */
             height: 480px;
@@ -448,8 +452,25 @@
             background-color: transparent;
             color: #009e69;
             border: 1px solid #009e69;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
         }
         .toggle-buttonss .learnmore:hover {
+            background-color: #009e69;
+            color: white;
+        }
+        .toggle-buttonss .view-all {
+            background-color: transparent;
+            color: #009e69;
+            border: 1px solid #009e69;
+            padding: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .toggle-buttonss .view-all:hover {
             background-color: #009e69;
             color: white;
         }
@@ -559,23 +580,31 @@
             margin: 0; /* Remove margin from paragraph */
             color: #555; /* Text color */
         }
+        
+
+
     </style>
 </head>
 <body>
     <header class="header">
-        <div class="logo">Logo</div>
+        <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Homepage.html" class="logo-link">
+            <div class="logo">Logo</div>
+        </a>
         <ul class="menu">
-            <li><a href="#">Tools</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#" class="register-btn">Register</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Tools.html">Tools</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Pricing.html">Pricing</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Login.html">Login</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Register.html" class="register-btn">Register</a></li>
         </ul>
     </header>
+
+   
+    
     <section class="second-fold">
         <h2>Professional SEO Reports and Tools</h2>
         <p>Identify technical SEO issues and take action to improve the health and performance of your website.</p>
         <div class="buttons">
-            <a href="#" class="btn get-started">Get Started</a>
+            <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Register.html" class="btn get-started">Get Started</a>
             <a href="#" class="btn demo">Demo
                 <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-3 height-3 ml-2" viewBox="0 0 15 15"><path d="M5,0V2h6.59L0,13.59,1.41,15,13,3.41V10h2V0Z"></path></svg>
             </a>
@@ -744,7 +773,10 @@
             </div>
         </div>
         <div class="toggle-buttonss">
-            <button class="learnmore">View all</button>
+            <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Tools.html">
+                <button class="view-all">View all</button>
+            </a>
+            
         </div>
     </section>
     <section class="pricing-fold">
@@ -799,17 +831,18 @@
             </div>
         </div>
         <div class="toggle-buttonss">
-            <button class="learnmore">Learn More</button>
+            
+            <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Pricing.html" class="learnmore">Learn More</a>
         </div>
     </section>
     <section class="footer">
     <div class="footer">
         <div class="footer-content">
             <div class="menu">
-                <a href="#">Contact</a>
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Developers</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Contact_Us.html">Contact</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Terms.html">Terms</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Privacy.html">Privacy</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Developers.html">Developers</a>
             </div>
             <div class="social-icons">
                 <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 24 23.88"><path d="M12,0a12,12,0,0,0-1.79,23.85V15.18h-3V12h3V9.93c0-3.48,1.69-5,4.58-5a16.26,16.26,0,0,1,2.46.15V7.83h-2c-1.23,0-1.66,1.16-1.66,2.47V12h3.6l-.49,3.15H13.62v8.7A12,12,0,0,0,12,0Z"></path></svg></a>

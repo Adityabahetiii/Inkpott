@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+</head>
+<body>
+    <header class="header">
+        <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Homepage.html" class="logo-link">
+            <div class="logo">Logo</div>
+        </a>
+        <ul class="menu">
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Tools.html">Tools</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Pricing.html">Pricing</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Login.html">Login</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Register.html" class="register-btn">Register</a></li>
+        </ul>
+    </header>
+<section class="content-section">
+    <div class="content-container">
+        <div class="row">
+            <h1 class="main-heading">Tools</h1>
+            <p class="sub-heading">Web tools and utilities.</p>
+        </div>
+        <div class="column search-options-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search">
+            </div>
+            <div class="sec-divider"></div>
+            <div class="options">
+                <button class="option-btn all-btn active" onclick="filterContent('all')">
+                    ALL <span id="all-count" class="all-count">0</span>
+                </button>
+                <button class="option-btn research-btn" onclick="filterContent('research')">
+                    RESEARCH <span id="research-count" class="research-count">0</span>
+                </button>
+                <button class="option-btn development-btn" onclick="filterContent('development')">
+                    DEVELOPMENT <span id="development-count" class="development-count">0</span>
+                </button>
+                <button class="option-btn content-btn" onclick="filterContent('content')">
+                    CONTENT <span id="content-count" class="content-count">0</span>
+                </button>
+            </div>
+        </div>
+        <div class="items-container">
+            <h2 id="items-heading">All Items</h2>
+            <div id="items-list" class="boxes-container">
+                
+                <div class="container" id="all-items">
+                    <!-- Box Items -->
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 18"><path d="M16,12v4H2V12H16m1-2H1a1,1,0,0,0-1,1v6a1,1,0,0,0,1,1H17a1,1,0,0,0,1-1V11A1,1,0,0,0,17,10ZM4,15.5A1.5,1.5,0,1,1,5.5,14,1.5,1.5,0,0,1,4,15.5ZM16,2V6H2V2H16m1-2H1A1,1,0,0,0,0,1V7A1,1,0,0,0,1,8H17a1,1,0,0,0,1-1V1A1,1,0,0,0,17,0ZM4,5.5A1.5,1.5,0,1,1,5.5,4,1.5,1.5,0,0,1,4,5.5Z"></path></svg>                        <h3>Base64 Converter</h3>
+                        <p>Encode text to Base64, or decode Base64 to text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="research fill-current width-5 height-5" viewBox="0 0 19.94 19.9"><path d="M11,17.88v2a10,10,0,0,0,5.32-2.21l-1.42-1.43A7.94,7.94,0,0,1,11,17.88Z"></path><path d="M2,10A8,8,0,0,1,9,2V0A10,10,0,0,0,9,19.9v-2A8,8,0,0,1,2,10Z"></path><path d="M17.92,9h2a10,10,0,0,0-2.21-5.32L16.3,5.06A7.87,7.87,0,0,1,17.92,9Z"></path><path d="M16.31,2.21A10,10,0,0,0,11,0V2a7.94,7.94,0,0,1,3.9,1.62Z"></path><path d="M16.3,14.85l1.43,1.42A10,10,0,0,0,19.94,11h-2A7.94,7.94,0,0,1,16.3,14.85Z"></path><path d="M14,9.05a4,4,0,1,0-8,0q0,2.49,4,5.9Q14,11.55,14,9.05ZM10,10A1.07,1.07,0,1,1,11,8.88,1.07,1.07,0,0,1,10,10Z"></path></svg>                        <h3>Binary Converter</h3>
+                        <p>Convert binary numbers to text and text to binary numbers.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 20"><path d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm6.93,6H14a15.65,15.65,0,0,0-1.38-3.56A8,8,0,0,1,16.92,6ZM10,2a14.09,14.09,0,0,1,1.91,4H8.09A14.09,14.09,0,0,1,10,2ZM2.26,12A8.24,8.24,0,0,1,2,10a8.24,8.24,0,0,1,.26-2H5.64a16.52,16.52,0,0,0-.14,2,16.52,16.52,0,0,0,.14,2Zm.82,2H6a15.65,15.65,0,0,0,1.38,3.56A8,8,0,0,1,3.08,14ZM6,6h-3A8,8,0,0,1,7.41,2.44,15.65,15.65,0,0,0,6,6Zm4,12a14.09,14.09,0,0,1-1.91-4h3.82A14.09,14.09,0,0,1,10,18Zm2.34-6H7.66a14.71,14.71,0,0,1-.16-2,14.58,14.58,0,0,1,.16-2h4.68a14.58,14.58,0,0,1,.16,2A14.71,14.71,0,0,1,12.34,12Zm.25,5.56A15.65,15.65,0,0,0,14,14h2.95A8,8,0,0,1,12.59,17.56ZM14.36,12a16.52,16.52,0,0,0,.14-2,16.52,16.52,0,0,0-.14-2h3.38A8.24,8.24,0,0,1,18,10a8.24,8.24,0,0,1-.26,2Z"></path></svg>                        <h3>Case Converter</h3>
+                        <p>Transform text to lower, upper, sentence, or capitalized case.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 16 20"><path d="M10,0H2A2,2,0,0,0,0,2V18a2,2,0,0,0,2,2H14a2,2,0,0,0,2-2V6ZM2,2H9l5,5v8.58l-1.84-1.84a5,5,0,1,0-1.41,1.4L13.6,18H2Zm8.11,11.1A3,3,0,0,1,8,14a2.93,2.93,0,0,1-2.11-.88A3,3,0,0,1,5,11a3,3,0,0,1,5.1-2.11A3,3,0,0,1,11,11,2.93,2.93,0,0,1,10.11,13.1Z"></path></svg>                        <h3>Lorem Ipsum Generator</h3>
+                        <p>Generate placeholder text for paragraphs, sentences, and words.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20.5 20"><path d="M17.3,14.9a4.81,4.81,0,0,0,.7-2.4A4.5,4.5,0,1,0,13.5,17a4.81,4.81,0,0,0,2.4-.7l3.2,3.2,1.4-1.4Zm-3.8.1A2.5,2.5,0,1,1,16,12.5,2.48,2.48,0,0,1,13.5,15ZM10,18v2A10,10,0,1,1,19.8,8H17.73A8,8,0,0,0,13,2.59V3a2,2,0,0,1-2,2H9V7A1,1,0,0,1,8,8H6v2H8v3H7L2.21,8.21A8.12,8.12,0,0,0,2,10,8,8,0,0,0,10,18Z"></path></svg>                        <h3>Number Generator</h3>
+                        <p>Generate a random number between a minimum and maximum value.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 6"><path d="M18,2H16.5V1.5h-2v3h2V4H18V5a1,1,0,0,1-1,1H14a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h3a1,1,0,0,1,1,1ZM5,1V6H3.5V4.5h-2V6H0V1A1,1,0,0,1,1,0H4A1,1,0,0,1,5,1Zm-1.5.5h-2V3h2Zm7,1.5a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1h-4V0h4a1,1,0,0,1,1,1V2A1,1,0,0,1,10.5,3ZM8,1.5v.75h2V1.5Zm2,2.25H8V4.5h2Z"></path></svg>                        <h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 12"><path d="M7.4,10.6,2.8,6,7.4,1.4,6,0,0,6l6,6Zm5.2,0L17.2,6,12.6,1.4,14,0l6,6-6,6Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 17.48"><path d="M15,11h-.8l-.27-.27A6.5,6.5,0,0,0,9,0a6.56,6.56,0,0,0-6.5,6.5H0l3.84,4L8,6.5H4.51A4.5,4.5,0,1,1,9,11a4.59,4.59,0,0,1-1.82-.38L5.71,12.1a6.47,6.47,0,0,0,7.52-.67l.27.27v.79l5,5L20,16Z"></path></svg>                      <h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 13"><path d="M5,3H0V1H5ZM5,6H0V8H5Zm13.59,7L14.76,9.17A5,5,0,1,1,17,5a5,5,0,0,1-.83,2.75L20,11.59ZM15,5a3,3,0,1,0-3,3A3,3,0,0,0,15,5ZM0,13H10V11H0Z"></path></svg>                       <h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 16 21"><path d="M14,7H13V5A5,5,0,0,0,3,5V7H2A2,2,0,0,0,0,9V19a2,2,0,0,0,2,2H14a2,2,0,0,0,2-2V9A2,2,0,0,0,14,7ZM5,5a3,3,0,0,1,6,0V7H5Zm9,14H2V9H14ZM8,16a2,2,0,1,0-2-2A2,2,0,0,0,8,16Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 18.65"><path d="M10,8a2,2,0,1,0,2,2A2,2,0,0,0,10,8Zm6,2a6,6,0,1,0-9,5.19l1-1.74a4,4,0,1,1,4,0l1,1.74A6,6,0,0,0,16,10ZM10,0A10,10,0,0,0,5,18.65l1-1.73a8,8,0,1,1,8,0l1,1.73A10,10,0,0,0,10,0Z"></path></svg>                      <h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="research">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 20"><path d="M9,5h2V7H9ZM9,9h2v6H9Zm1-9A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,10,18Z"></path></svg>                     <h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                
+                
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20.89 19"><path d="M1.23,16.9l1.34.56v-9L.14,14.29A2,2,0,0,0,1.23,16.9Zm19.5-3.7-5-12A2,2,0,0,0,13.17.15L5.8,3.2A2,2,0,0,0,4.57,5a1.87,1.87,0,0,0,.15.8l5,12A2,2,0,0,0,11.51,19a2.07,2.07,0,0,0,.77-.15l7.36-3.05A2,2,0,0,0,20.73,13.2ZM11.53,17l-5-12,7.35-3h0l4.95,12Z"></path><circle cx="9.7" cy="6.25" r="1"></circle><path d="M4.58,17a2,2,0,0,0,2,2H8L4.58,10.66Z"></path></svg>                      <h3>Base64 Converter</h3>
+                        <p>Encode text to Base64, or decode Base64 to text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 6"><path d="M6.5,5V4H8v.5h2v-1H7.5a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h3a1,1,0,0,1,1,1V2H10V1.5H8v1h2.5a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1h-3A1,1,0,0,1,6.5,5ZM14,6h3a1,1,0,0,0,1-1V3.5a1,1,0,0,0-1-1H14.5v-1h2V2H18V1a1,1,0,0,0-1-1H14a1,1,0,0,0-1,1V2.5a1,1,0,0,0,1,1h2.5v1h-2V4H13V5A1,1,0,0,0,14,6ZM5,1A1,1,0,0,0,4,0H1A1,1,0,0,0,0,1V5A1,1,0,0,0,1,6H4A1,1,0,0,0,5,5V4H3.5v.5h-2v-3h2V2H5Z"></path></svg><h3>Binary Converter</h3>
+                        <p>Convert binary numbers to text and text to binary numbers.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 24 6"><path d="M3.5,0H5V6H3.5V3.5h-2V6H0V0H1.5V2h2Zm14,0H13a1,1,0,0,0-1,1V6h1.5V1.5h1V5H16V1.49h1V6h1.5V1A1,1,0,0,0,17.5,0ZM11,0H6V1.5H7.75V6h1.5V1.5H11ZM24,6V4.5H21.5V0H20V6Z"></path></svg><h3>Case Converter</h3>
+                        <p>Transform text to lower, upper, sentence, or capitalized case.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 14"><path d="M16,10v2H2V10H16M18,0H0V2H18Zm0,4H0V6H18Zm0,4H0v6H18Z"></path></svg><h3>Lorem Ipsum Generator</h3>
+                        <p>Generate placeholder text for paragraphs, sentences, and words.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 11 6"><path d="M6,5V4H7.5v.5h2v-1H7a1,1,0,0,1-1-1V1A1,1,0,0,1,7,0h3a1,1,0,0,1,1,1V2H9.5V1.5h-2v1H10a1,1,0,0,1,1,1V5a1,1,0,0,1-1,1H7A1,1,0,0,1,6,5ZM3,0V4.5H1.5v-1H0v1A1.5,1.5,0,0,0,1.5,6H3A1.5,1.5,0,0,0,4.5,4.5V0Z"></path></svg><h3>Number Generator</h3>
+                        <p>Generate a random number between a minimum and maximum value.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 16"><path d="M2,3V5A1,1,0,0,1,1,6H0v4H1a1,1,0,0,1,1,1v2a3,3,0,0,0,3,3H8V14H5a1,1,0,0,1-1-1V11A3,3,0,0,0,2,8.17V7.83A3,3,0,0,0,4,5V3A1,1,0,0,1,5,2H8V0H5A3,3,0,0,0,2,3Z"></path><path d="M19,6a1,1,0,0,1-1-1V3a3,3,0,0,0-3-3H12V2h3a1,1,0,0,1,1,1V5a3,3,0,0,0,2,2.83v.34A3,3,0,0,0,16,11v2a1,1,0,0,1-1,1H12v2h3a3,3,0,0,0,3-3V11a1,1,0,0,1,1-1h1V6Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 16 16"><path d="M16,6V4H12V0H10V4H6V0H4V4H0V6H4v4H0v2H4v4H6V12h4v4h2V12h4V10H12V6Zm-6,4H6V6h4Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 22 12"><path d="M1,10H21v2H1ZM2.15,6,3,4.47,3.85,6l1.3-.75L4.3,3.72H6V2.22H4.3L5.15.75,3.85,0,3,1.47,2.15,0,.85.75,1.7,2.22H0v1.5H1.7L.85,5.2Zm6.7-.75,1.3.75L11,4.47,11.85,6l1.3-.75L12.3,3.72H14V2.22H12.3L13.15.75,11.85,0,11,1.47,10.15,0,8.85.75,9.7,2.22H8v1.5H9.7ZM22,2.22H20.3L21.15.75,19.85,0,19,1.47,18.15,0l-1.3.75.85,1.47H16v1.5h1.7L16.85,5.2l1.3.75L19,4.47,19.85,6l1.3-.75L20.3,3.72H22Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 100 100"><path d="M0,0V33.33H33.33V0ZM44.44,0V11.11H55.56V0ZM66.67,0V33.33H100V0ZM11.11,11.11H22.22V22.22H11.11Zm66.67,0H88.89V22.22H77.78ZM44.44,22.22V33.33H55.56V22.22ZM0,44.44V55.56H11.11V44.44Zm22.22,0V55.56H33.33V44.44Zm22.22,0V55.56H55.56V44.44ZM55.56,55.56V66.67H66.67V55.56Zm11.11,0H77.78V44.44H66.67Zm11.11,0V66.67H88.89V55.56Zm11.11,0H100V44.44H88.89Zm0,11.11V77.78H100V66.67Zm0,11.11H77.78V88.89H88.89Zm0,11.11V100H100V88.89Zm-11.11,0H66.67V100H77.78Zm-11.11,0V77.78H55.56V88.89Zm-11.11,0H44.44V100H55.56Zm0-11.11V66.67H44.44V77.78Zm11.11,0H77.78V66.67H66.67ZM0,66.67V100H33.33V66.67ZM11.11,77.78H22.22V88.89H11.11Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 16 16"><path d="M6.59,5.17,1.41,0,0,1.41,5.17,6.58ZM10.5,0l2,2L0,14.59,1.41,16,14,3.46l2,2V0Zm.33,9.41L9.42,10.82,12.55,14,10.5,16H16V10.5l-2,2Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 16"><path d="M18,0H2A2,2,0,0,0,0,2V5H2V2H18V5h2V2A2,2,0,0,0,18,0Z"></path><path d="M18,14H2V11H0v3a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V11H18Z"></path><path d="M12.89,3.55a1,1,0,0,0-1.79,0L8,9.76,6.89,7.55A1,1,0,0,0,6,7H0V9H5.38L7.1,12.45A1,1,0,0,0,8,13a1,1,0,0,0,.89-.55L12,6.24l1.11,2.21A1,1,0,0,0,14,9h6V7H14.62Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 21 19"><path d="M4,14H5.09a6,6,0,0,1,2.6-4H4Z"></path><path d="M2,16V2H16V9h1a6.64,6.64,0,0,1,1,.09V2a2,2,0,0,0-2-2H2A2,2,0,0,0,0,2V16a2,2,0,0,0,2,2H5.81a6,6,0,0,1-.72-2Z"></path><rect x="4" y="4" width="4" height="4"></rect><rect x="10" y="4" width="4" height="4"></rect><path d="M13,17H11a2,2,0,0,1,0-4h2V11H11a4,4,0,0,0,0,8h2Z"></path><path d="M17,11H15v2h2a2,2,0,0,1,0,4H15v2h2a4,4,0,0,0,0-8Z"></path><polygon points="17 16 17 14 14 14 11 14 11 16 16 16 17 16"></polygon></svg> <h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 22 18"><path d="M20,0H2A2,2,0,0,0,0,2V16a2,2,0,0,0,2,2H20a2,2,0,0,0,2-2V2A2,2,0,0,0,20,0Zm0,16H2V2H12V6h8Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 19 14"><path d="M14.63.84A2,2,0,0,0,13,0H2A2,2,0,0,0,0,2V12a2,2,0,0,0,2,2H13a2,2,0,0,0,1.63-.84L19,7ZM13,12H2V2H13l3.55,5Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="development">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 14"><path d="M0,2V12a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H2A2,2,0,0,0,0,2ZM16,12H2V8H16ZM2,6V2H16V6Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 18"><path d="M6,8H4v2H6Zm4,4H8v2h2ZM6,0H4V2H6Zm4,8H8v2h2ZM2,0H0V2H2Zm8,4H8V6h2Zm4,4H12v2h2ZM10,0H8V2h2Zm4,0H12V2h2Zm2,10h2V8H16Zm0,4h2V12H16ZM2,4H0V6H2ZM16,0V2h2V0Zm0,6h2V4H16ZM2,8H0v2H2ZM0,18H18V16H0Zm2-6H0v2H2Z"></path></svg><h3>Base64 Converter</h3>
+                        <p>Encode text to Base64, or decode Base64 to text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 16"><path d="M13,12h3a1,1,0,0,0,1-1V5a1,1,0,0,0-1-1H13a1,1,0,0,0-1,1v6A1,1,0,0,0,13,12Zm1-6h1v4H14ZM7,12h3a1,1,0,0,0,1-1V5a1,1,0,0,0-1-1H7A1,1,0,0,0,6,5v6A1,1,0,0,0,7,12ZM8,6H9v4H8ZM3,4H5v8H3ZM0,0V16H20V0ZM18,14H2V2H18Z"></path></svg><h3>Binary Converter</h3>
+                        <p>Convert binary numbers to text and text to binary numbers.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 16 20"><rect y="18" width="16" height="2"></rect><rect width="16" height="2"></rect><polygon points="5.41 11.59 4 13 8 17 12 13 10.59 11.59 9 13.17 9 6.83 10.59 8.41 12 7 8 3 4 7 5.41 8.41 7 6.83 7 13.17 5.41 11.59"></polygon></svg><h3>Case Converter</h3>
+                        <p>Transform text to lower, upper, sentence, or capitalized case.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 12"><path d="M18,5H0V7H18ZM0,10H12v2H0ZM18,0H0V2H18Z"></path></svg><h3>Lorem Ipsum Generator</h3>
+                        <p>Generate placeholder text for paragraphs, sentences, and words.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 15.5 6"><path d="M3,6H1.5V1.5H0V0H3ZM9.5,4.5h-3v-1h2a1,1,0,0,0,1-1V1a1,1,0,0,0-1-1H5V1.5H8v1H6a1,1,0,0,0-1,1V6H9.5Zm6,.5V1a1,1,0,0,0-1-1H11V1.5h3v1H12v1h2v1H11V6h3.5A1,1,0,0,0,15.5,5Z"></path></svg><h3>Number Generator</h3>
+                        <p>Generate a random number between a minimum and maximum value.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 16.14"><path d="M18,3.14v-3H4.39l3,3H9.22L8.67,4.42l2.09,2.1,1.45-3.38ZM1.41,0,0,1.41l7,7L4.5,14.14h3l1.57-3.66,5.66,5.66,1.41-1.41Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 17.49 17.49"><path d="M7,2a5,5,0,0,1,3.54,1.46L8,6h6V0L12,2.05A7,7,0,0,0,.08,6h2A5,5,0,0,1,7,2Zm5.64,9.14A6.89,6.89,0,0,0,13.92,8h-2a5,5,0,0,1-8.44,2.54L6,8H0v6L2.05,12a7,7,0,0,0,9.09.69L16,17.49,17.49,16Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 22 16"><path d="M18,4,14,8h3a6,6,0,0,1-6,6,5.87,5.87,0,0,1-2.8-.7L6.74,14.76A8,8,0,0,0,19,8h3ZM5,8a6,6,0,0,1,6-6,5.87,5.87,0,0,1,2.8.7l1.46-1.46A8,8,0,0,0,3,8H0l4,4L8,8Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 10"><path d="M1.9,5A3.1,3.1,0,0,1,5,1.9H9V0H5A5,5,0,0,0,5,10H9V8.1H5A3.1,3.1,0,0,1,1.9,5ZM6,6h8V4H6Zm9-6H11V1.9h4a3.1,3.1,0,1,1,0,6.2H11V10h4A5,5,0,0,0,15,0Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 17 6.02"><path d="M0,5V0H1.5v4.5h2V0H5V5A1,1,0,0,1,4,6H1A1,1,0,0,1,0,5Zm1.5-.5h0Zm10-2v-1A1.54,1.54,0,0,0,10,0H6.5V6H8V4H9.1L10,6h1.5l-.9-2.1A1.69,1.69,0,0,0,11.5,2.51Zm-1.5,0H8v-1h2ZM17,6V4.5H14.5V0H13V6Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 20 16"><path d="M18,0H2A2,2,0,0,0,0,2V14a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V2A2,2,0,0,0,18,0Zm0,14H2V2H18Z"></path><polygon points="4.49 6.5 4.49 11 5.64 11 5.64 5 4.77 5 3.01 6.27 3.59 7.16 4.49 6.5"></polygon><path d="M9.47,6.05a.74.74,0,0,1,.81.72,1.45,1.45,0,0,1-.54,1.06C9.38,8.21,8.68,8.91,7.61,10v1H11.5V10H9.13l0,0,1.4-1.39a2.63,2.63,0,0,0,.92-1.86,1.62,1.62,0,0,0-.91-1.48,2.34,2.34,0,0,0-1.95,0,1.86,1.86,0,0,0-1,1.15l1,.42A.94.94,0,0,1,9.47,6.05Z"></path><path d="M15,9.94a1,1,0,0,1-1-.86l-1,.41A2,2,0,0,0,15,11a2,2,0,0,0,1.76-.85,1.63,1.63,0,0,0,0-1.76,1.47,1.47,0,0,0-.68-.52V7.8a1.39,1.39,0,0,0,.52-.48,1.5,1.5,0,0,0,0-1.57A1.88,1.88,0,0,0,14.94,5a1.87,1.87,0,0,0-1.85,1.24l1,.41A.86.86,0,0,1,14.93,6a.67.67,0,0,1,.75.65c0,.58-.55.72-.88.72h-.46v1h.5c.56,0,1,.24,1,.79A.84.84,0,0,1,15,9.94Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                    <div class="box" data-category="content">
+                        <a href="https://www.example.com" target="_blank"></a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 16"><path d="M0,13H18V11H0Zm0,3H18V15H0ZM0,9H18V6H0ZM0,0V4H18V0Z"></path></svg><h3>Text Cleaner</h3>
+                        <p>Clean HTML tags, spaces, and line breaks from a text.</p>
+                    </div>
+                </div>
+                <div class="container" id="all-items">
+                    <!-- Box Items -->
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<section class="footer">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="menu">
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Contact_Us.html">Contact</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Terms.html">Terms</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Privacy.html">Privacy</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Developers.html">Developers</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 24 23.88"><path d="M12,0a12,12,0,0,0-1.79,23.85V15.18h-3V12h3V9.93c0-3.48,1.69-5,4.58-5a16.26,16.26,0,0,1,2.46.15V7.83h-2c-1.23,0-1.66,1.16-1.66,2.47V12h3.6l-.49,3.15H13.62v8.7A12,12,0,0,0,12,0Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 21.57 19.5"><path d="m16.99,0h3.31l-7.23,8.26,8.5,11.24h-6.66l-5.21-6.82-5.97,6.82H.43l7.73-8.84L0,0h6.83l4.71,6.23L16.99,0Zm-1.16,17.52h1.83L5.83,1.88h-1.97l11.97,15.64Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 18"><path d="M5,0A5,5,0,0,0,0,5v8a5,5,0,0,0,5,5h8a5,5,0,0,0,5-5V5a5,5,0,0,0-5-5ZM5,2h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2Zm9,1a1,1,0,1,0,1,1A1,1,0,0,0,14,3ZM9,4a5,5,0,1,0,5,5A5,5,0,0,0,9,4ZM9,6A3,3,0,1,1,6,9,3,3,0,0,1,9,6Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 43.1 32"><path d="M41.9,5.5a5.69,5.69,0,0,0-4.5-4.3A88.93,88.93,0,0,0,21.4,0,90.2,90.2,0,0,0,5.3,1.2,5.55,5.55,0,0,0,.8,5.5,65.9,65.9,0,0,0,0,16,54.4,54.4,0,0,0,.9,26.5a5.69,5.69,0,0,0,4.5,4.3A91.89,91.89,0,0,0,21.5,32a91.89,91.89,0,0,0,16.1-1.2,5.55,5.55,0,0,0,4.5-4.3,76.19,76.19,0,0,0,1-10.5A69.63,69.63,0,0,0,41.9,5.5ZM16,23V9l12.2,7Z"></path></svg></a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="bottom-footer">
+            <div class="copyright">&copy; 2024 Your Company. All rights reserved.</div>
+            <div class="mode-toggle">
+                <label>
+                    <input type="checkbox" id="mode-toggle">
+                    Dark Mode
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+
+
+<style>
+    
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px; /* Adjusted padding */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+        .header .logo {
+            color: rgba(0, 0, 0, .65);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .menu {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .header .menu li {
+            display: inline;
+        }
+
+        .header .menu a {
+            color: rgba(0, 0, 0, .65);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .header .menu a:hover {
+            color: #ddd;
+        }
+        .register-btn {
+            background-color: #fff;
+            color: #009e69 !important;;
+            padding: 8px 15px;
+            border: none;
+            border: 1px solid #009e69;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .register-btn:hover {
+            background-color: #009e69;
+            color: #ffff !important;
+        }
+
+    .height-5 {
+    height: 1.25rem !important;
+}
+.width-5 {
+    width: 1.25rem !important;
+}
+.all-count{
+        color: #006b47;
+        background-color: rgba(0, 158, 105, .2);
+        padding: .25em .4em;
+        border-radius: .25rem;
+    }
+    .research-count{
+        color: #bd2130;
+        background-color: rgba(220, 53, 69, .2);
+        padding: .25em .4em;
+        border-radius: .25rem;
+    }
+    .development-count{
+        color: #117a8b;
+        background-color: rgba(23, 162, 184, .2);
+        padding: .25em .4em;
+        border-radius: .25rem;
+    }
+    .content-count{
+        color: #d39e00;
+        background-color: rgba(255, 193, 7, .2);
+        padding: .25em .4em;
+        border-radius: .25rem;
+    }
+.container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 280px;
+    height: 120px;
+}
+
+.box svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    align-self: start;
+    
+}
+
+.box[data-category="content"] svg {
+            fill: #ffc107;
+        }
+        .box[data-category="development"] svg {
+            
+            fill: #17a2b8;
+        }
+        .box[data-category="research"] svg {
+            fill: #dc3545; 
+        }
+.box h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.box p {
+    font-size: 0.9em;
+    color: #666;
+}
+    .content-section{
+        background-color: #f9f9f9;
+    }
+   .content-container {
+    padding: 20px;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.row {
+    text-align: center; /* Center align all text within this row */
+    padding-bottom: 50px; /* Optional: Space below the heading */
+    padding-top: 60px;
+}
+
+.main-heading {
+    font-size: 24px; /* Adjust font size as needed */
+    color: #009e69; /* Heading color */
+    margin: 0; /* Remove default margin */
+}
+
+.sub-heading {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #555; /* Subheading color */
+    margin: 5px 0;
+    padding-top: 20px;
+}
+.search-options-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sec-divider {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    margin-right: -40px;
+    margin-left: -20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.option-btn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #009e69;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+}
+
+.option-btn:not(:last-child) {
+    border-right: 1px solid #ddd;
+    height: 50px;
+}
+
+.option-btn:hover {
+    background-color: #f1f1f1;
+}
+
+.content-items {
+    margin-top: 20px;
+}
+
+.item {
+    display: none;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.item.active {
+    display: block;
+}
+.footer {
+            display: flex;
+            flex-direction: column;
+            background-color: #f9f9f9;;
+            padding: 20px;
+            margin-top: auto; /* Push footer to the bottom */
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 40px; /* Space between menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #009e69; /* Link color */
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px; /* Space between social icons */
+        }
+
+
+        .divider {
+            border-top: 1px solid #ddd; /* Light color line */
+            margin: 15px 0;
+        }
+
+        .bottom-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copyright {
+            color: #555; /* Darker text for copyright */
+        }
+
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            
+        }
+        .height-5 {
+            height: 1.25rem !important;
+        }
+        .width-5 {
+            width: 1.25rem !important;
+            color: #4f4f4f 
+        }
+        .info-fold {
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            background-color: #f9f9f9; /* Light background color */
+            text-align: center; /* Center heading and subheading */
+        }
+
+        .info-fold h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #333;
+
+        }
+
+        .info-fold p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .footer flex-container {
+            display: flex;
+            flex-direction: column; /* Stack rows vertically */
+            gap: 10px; /* Space between rows */
+            
+        }
+
+        .footer row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; /* Space between columns */
+        }
+
+        .footer column {
+            flex: 1 1 22%; /* Allow 4 columns to fit in each row */
+            padding: 20px;
+            display: flex; /* Flexbox for icon and text */
+            align-items: center; /* Center items vertically */
+            
+        }
+        .footer column p {
+            margin: 0; /* Remove margin from paragraph */
+            color: #555; /* Text color */
+        }
+
+</style>
+
+<script>
+    function filterContent(category = 'all') {
+    const boxes = document.querySelectorAll('.box');
+    const itemsHeading = document.getElementById('items-heading');
+
+    // Reset display for all boxes and update heading
+    boxes.forEach(box => {
+        box.style.display = 'none'; // Hide all boxes
+    });
+
+    // Set the heading based on the selected category
+    if (category === 'all') {
+        itemsHeading.textContent = 'All Items';
+    } else {
+        itemsHeading.textContent = category.charAt(0).toUpperCase() + category.slice(1) + ' Items';
+    }
+
+    // Show boxes based on the selected category
+    boxes.forEach(box => {
+        if (box.getAttribute('data-category') === category || category === 'all') {
+            box.style.display = 'block'; // Show the matching boxes
+        }
+    });
+
+    updateCounts(); // Update counts after filtering
+}
+
+// Example function to update counts for buttons
+function updateCounts() {
+    const allBoxes = document.querySelectorAll('.box');
+    const researchBoxes = document.querySelectorAll('.box[data-category="research"]');
+    const developmentBoxes = document.querySelectorAll('.box[data-category="development"]');
+    const contentBoxes = document.querySelectorAll('.box[data-category="content"]');
+
+    document.getElementById('all-count').textContent = allBoxes.length;
+    document.getElementById('research-count').textContent = researchBoxes.length;
+    document.getElementById('development-count').textContent = developmentBoxes.length;
+    document.getElementById('content-count').textContent = contentBoxes.length;
+}
+
+// Call updateCounts to initialize the counts on page load
+window.onload = updateCounts;
+
+</script>

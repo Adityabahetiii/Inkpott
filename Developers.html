@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px; /* Adjusted padding */
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+        .header .logo {
+            color: rgba(0, 0, 0, .65);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .menu {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .header .menu li {
+            display: inline;
+        }
+
+        .header .menu a {
+            color: rgba(0, 0, 0, .65);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .header .menu a:hover {
+            color: #ddd;
+        }
+        .register-btn {
+            background-color: #fff;
+            color: #009e69 !important;;
+            padding: 8px 15px;
+            border: none;
+            border: 1px solid #009e69;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .register-btn:hover {
+            background-color: #009e69;
+            color: #ffff !important;
+        }
+        .second-fold {
+            padding: 50px;
+            text-align: center;
+            
+        }
+
+        .second-fold h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: 700 !important;
+        }
+
+        .second-fold p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .third-fold{
+            background-color: #f9f9f9;
+            padding-bottom: 60px;
+        }
+        .three-column-row {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 75%;
+        padding-left: 200px;
+        padding-bottom: 90px;
+        }
+        .three-column-row a {
+        text-decoration: none;
+        color: inherit; 
+        }
+        .column:hover {
+            transform: scale(1.02); /* Slightly enlarge on hover */
+        }
+
+        .column {
+            transition: transform 0.2s ease;
+            flex: 1; /* Ensures each column is equally sized */
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .flex-box {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .flex-box svg {
+            fill: #009e69; /* Customize the color */
+        }
+
+        .text-content h3 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333;
+        }
+
+        .text-content p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 5px 0 0;
+        }
+
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 40px; /* Space between menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #009e69; /* Link color */
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px; /* Space between social icons */
+        }
+
+
+        .divider {
+            border-top: 1px solid #ddd; /* Light color line */
+            margin: 15px 0;
+        }
+
+        .bottom-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copyright {
+            color: #555; /* Darker text for copyright */
+        }
+
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            
+        }
+        .height-5 {
+            height: 1.25rem !important;
+        }
+        .width-5 {
+            width: 1.25rem !important;
+            color: #4f4f4f 
+        }
+        .height-6 {
+        height: 1.5rem !important;
+        }
+        .width-6 {
+        width: 1.5rem !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Homepage.html" class="logo-link">
+            <div class="logo">Logo</div>
+        </a>
+        <ul class="menu">
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Tools.html">Tools</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Pricing.html">Pricing</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Login.html">Login</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Register.html" class="register-btn">Register</a></li>
+        </ul>
+    </header>
+    
+    <section class="third-fold">
+        <section class="second-fold">
+            <h2>Developers</h2>
+            <p>Explore our API documentation.</p>
+        </section>
+        <div class="three-column-row">
+            <!-- Column 1 -->
+            <div class="column">
+                <a href="">
+                    <div class="flex-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-6 height-6" viewBox="0 0 20 18">
+                            <path d="M5,6H2V2H5Zm10,6h3v4H15ZM15,2h3V6H15Zm0,6h3a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H15a2,2,0,0,0-2,2V3H7V2A2,2,0,0,0,5,0H2A2,2,0,0,0,0,2V6A2,2,0,0,0,2,8H5A2,2,0,0,0,7,6V5H9v7a3,3,0,0,0,3,3h1v1a2,2,0,0,0,2,2h3a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H15a2,2,0,0,0-2,2v1H12a1,1,0,0,1-1-1V5h2V6A2,2,0,0,0,15,8Z">
+                            </path>
+                        </svg>
+                        <div class="text-content">
+                            <h3>Projects</h3>
+                            <p>Manage the Projects.</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        
+            <!-- Column 2 -->
+            <div class="column">
+                <a href="">
+                    <div class="flex-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-6 height-6" viewBox="0 0 24 24">
+                            <path d="M12,8h5.33a1.34,1.34,0,1,0,0-2.67H12A1.34,1.34,0,0,0,12,8Zm0,5.33h5.33a1.33,1.33,0,1,0,0-2.66H12a1.33,1.33,0,0,0,0,2.66Zm0,5.34h5.33a1.34,1.34,0,1,0,0-2.67H12a1.34,1.34,0,0,0,0,2.67ZM5.33,5.33H8V8H5.33Zm0,5.34H8v2.66H5.33Zm0,5.33H8v2.67H5.33Z"></path><path d="M21.33,0H2.67A2.68,2.68,0,0,0,0,2.67V21.33A2.68,2.68,0,0,0,2.67,24H21.33A2.68,2.68,0,0,0,24,21.33V2.67A2.68,2.68,0,0,0,21.33,0Zm0,21.33H2.67V2.67H21.33Z">
+                            </path>
+                        </svg>
+                        <div class="text-content">
+                            <h3>Reports</h3>
+                            <p>Manage the reports.</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        
+            <!-- Column 3 -->
+            <div class="column">
+                <a href="">
+                    <div class="flex-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-6 height-6" viewBox="0 0 18 18">
+                            <path d="m16,0H2C.9,0,0,.9,0,2v14c0,1.1.9,2,2,2h14c1.1,0,2-.9,2-2V2c0-1.1-.9-2-2-2Zm-2,16H4v-.24c1.42-1.14,3.16-1.76,5-1.76s3.58.62,5,1.76v.24Zm2-1.14c-1.8-1.77-4.27-2.86-7-2.86s-5.2,1.09-7,2.86V2h14v12.86Zm-7-4.86c1.93,0,3.5-1.57,3.5-3.5s-1.57-3.5-3.5-3.5-3.5,1.57-3.5,3.5,1.57,3.5,3.5,3.5Zm0-5c.83,0,1.5.67,1.5,1.5s-.67,1.5-1.5,1.5-1.5-.67-1.5-1.5.67-1.5,1.5-1.5Z">
+                            </path>
+                        </svg>
+                        <div class="text-content">
+                            <h3>Account</h3>
+                            <p>Manage the account.</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="menu">
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Contact_Us.html">Contact</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Terms.html">Terms</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Privacy.html">Privacy</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Developers.html">Developers</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 24 23.88"><path d="M12,0a12,12,0,0,0-1.79,23.85V15.18h-3V12h3V9.93c0-3.48,1.69-5,4.58-5a16.26,16.26,0,0,1,2.46.15V7.83h-2c-1.23,0-1.66,1.16-1.66,2.47V12h3.6l-.49,3.15H13.62v8.7A12,12,0,0,0,12,0Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 21.57 19.5"><path d="m16.99,0h3.31l-7.23,8.26,8.5,11.24h-6.66l-5.21-6.82-5.97,6.82H.43l7.73-8.84L0,0h6.83l4.71,6.23L16.99,0Zm-1.16,17.52h1.83L5.83,1.88h-1.97l11.97,15.64Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 18"><path d="M5,0A5,5,0,0,0,0,5v8a5,5,0,0,0,5,5h8a5,5,0,0,0,5-5V5a5,5,0,0,0-5-5ZM5,2h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2Zm9,1a1,1,0,1,0,1,1A1,1,0,0,0,14,3ZM9,4a5,5,0,1,0,5,5A5,5,0,0,0,9,4ZM9,6A3,3,0,1,1,6,9,3,3,0,0,1,9,6Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 43.1 32"><path d="M41.9,5.5a5.69,5.69,0,0,0-4.5-4.3A88.93,88.93,0,0,0,21.4,0,90.2,90.2,0,0,0,5.3,1.2,5.55,5.55,0,0,0,.8,5.5,65.9,65.9,0,0,0,0,16,54.4,54.4,0,0,0,.9,26.5a5.69,5.69,0,0,0,4.5,4.3A91.89,91.89,0,0,0,21.5,32a91.89,91.89,0,0,0,16.1-1.2,5.55,5.55,0,0,0,4.5-4.3,76.19,76.19,0,0,0,1-10.5A69.63,69.63,0,0,0,41.9,5.5ZM16,23V9l12.2,7Z"></path></svg></a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="bottom-footer">
+            <div class="copyright">&copy; 2024 Your Company. All rights reserved.</div>
+            <div class="mode-toggle">
+                <label>
+                    <input type="checkbox" id="mode-toggle">
+                    Dark Mode
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
