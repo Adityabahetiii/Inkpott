@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 200px; /* Adjusted padding */
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo {
+            color: rgba(0, 0, 0, .65);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .menu {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .header .menu li {
+            display: inline;
+        }
+
+        .header .menu a {
+            color: rgba(0, 0, 0, .65);
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .header .menu a:hover {
+            color: #ddd;
+        }
+        .register-btn {
+            background-color: #fff;
+            color: #009e69 !important;;
+            padding: 8px 15px;
+            border: none;
+            border: 1px solid #009e69;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .register-btn:hover {
+            background-color: #009e69;
+            color: #ffff !important;
+        }
+        .breadcrumb {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #757575;
+            margin-left: 200px;
+            padding-top: 40px;
+            padding-bottom: 5px;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #757575;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb span {
+            margin: 0 5px;
+            color: #999;
+        }
+
+        .heading {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: #333;
+            margin-left: 200px;
+        }
+        .container {
+            background-color: white;
+            width: 72%;
+            border-radius: 8px;
+            padding: 20px;
+            margin-left: 200px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-top: 0px;
+        }
+        .container h2 {
+            margin-top: 0;
+        }
+
+        .api-endpoint {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .api-endpoint .post-badge {
+            display: inline-block;
+            background-color: #f5f5f5;
+            color: #ffc107;
+            font-weight: bold;
+            padding: 1px 4px;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+
+        .code-box {
+            background-color: #333;
+            color: #fff;
+            padding: 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .api-endpoint {
+            background-color: #333;
+            color: #fff;
+            padding: 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .text-success {
+        color: #28a745 !important;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            margin-top: 20px;
+        }
+        thead th {
+            border-bottom: 1px solid #ddd;
+            color: #757575;
+            font-weight: bold;
+        }
+        tbody tr td {
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Column spacing */
+        table td + tr  {
+            padding-left: 20px;
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            text-align: left;
+            
+        }
+        .Parameter{
+            width: 20%;
+        }
+        .type{
+            width: 25%;
+        }
+        code {
+        word-wrap: break-word;
+        color: #e83e8c;
+        font-size: .975rem;
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .param-required {
+            background-color: rgba(220, 53, 69, .2);
+            color: #bd2130;
+            font-weight: 700;
+            font-size: 75%;
+            padding: .25em .4em;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+        .param-string {
+            background-color: hsla(0, 0%, 46%, .2);
+            color: #5c5c5c;
+            font-weight: 700;
+            font-size: 75%;
+            padding: .25em .4em;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+
+        .param-optional {
+            background-color: rgba(0, 158, 105, .2);
+            color: #006b47;
+            font-weight: 700;
+            font-size: 75%;
+            padding: .25em .4em;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+
+        /* Adjusting the alignment and spacing of types */
+        .type-container {
+            align-items: center;
+            gap: 8px;
+        }
+        .privacy{
+            line-height: 25px;
+        }
+        .sec-divider {
+        border-bottom: 1px solid #ddd;
+        margin: 0;
+        margin-right: -20px;
+        margin-left: -20px;
+        margin-bottom: 20px;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+
+        .head h2 {
+            margin: 0;
+        }
+        .label-badge {
+            background-color: rgba(220, 53, 69, .2);
+            color: #bd2130;
+            font-weight: bold;
+            font-size: 70%;
+            padding: .25em .4em;
+            border-radius: 4px;
+            opacity: 0.8;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;;
+            padding: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
+            
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 40px; /* Space between menu items */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #009e69; /* Link color */
+            font-weight: bold;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px; /* Space between social icons */
+        }
+
+
+        .divider {
+            border-top: 1px solid #ddd; /* Light color line */
+            margin: 15px 0;
+        }
+
+        .bottom-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copyright {
+            color: #555; /* Darker text for copyright */
+        }
+
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            
+        }
+        .height-5 {
+            height: 1.25rem !important;
+        }
+        .width-5 {
+            width: 1.25rem !important;
+            color: #4f4f4f 
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Homepage.html" class="logo-link">
+            <div class="logo">Logo</div>
+        </a>
+        <ul class="menu">
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Tools.html">Tools</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Pricing.html">Pricing</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Login.html">Login</a></li>
+            <li><a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Register.html" class="register-btn">Register</a></li>
+        </ul>
+    </header>
+    <div class="breadcrumb">
+        <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Homepage.html">Home</a> <span>&gt;</span>
+        <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Developers.html">Developers</a> <span>&gt;</span>
+        <span>Account</span>
+    </div>
+    <div class="heading">Account</div>
+    <div class="container">
+        <div class="head">
+            <h3>Notes</h3>
+            <span class="label-badge">Expert level</span>
+        </div>
+        <div class="sec-divider"></div>
+        <p>The API key should be sent as a Bearer token in the Authorization header of the request.
+            <a href="" style="color: #009e69; text-decoration: none;">Get your API key</a>
+        </p> 
+    </div>
+    <div class="container">
+        <div class="head">
+            <h3>Show</h3>
+        </div>
+        <div class="sec-divider"></div>
+        <h>API endpoint:</h>
+        <p class="api-endpoint">
+            <span class="post-badge">POST</span>
+            https://phprank.lunatio.com/api/v1/reports
+        </p>
+        <h>Request Example:</h>
+        <div class="code-box">
+            curl --location --request POST 'https://phprank.lunatio.com/api/v1/reports' \<br>
+            --header 'Content-Type: application/x-www-form-urlencoded' \<br>
+            --header 'Authorization: Bearer <span class="text-success">{api_key}</span> \<br>
+            --data-urlencode 'url=<span class="text-success">{url}</span>'
+        </div>
+        
+        
+    </div>
+    <section class="footer">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="menu">
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Contact_Us.html">Contact</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Terms.html">Terms</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Privacy.html">Privacy</a>
+                <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Developers.html">Developers</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 24 23.88"><path d="M12,0a12,12,0,0,0-1.79,23.85V15.18h-3V12h3V9.93c0-3.48,1.69-5,4.58-5a16.26,16.26,0,0,1,2.46.15V7.83h-2c-1.23,0-1.66,1.16-1.66,2.47V12h3.6l-.49,3.15H13.62v8.7A12,12,0,0,0,12,0Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 21.57 19.5"><path d="m16.99,0h3.31l-7.23,8.26,8.5,11.24h-6.66l-5.21-6.82-5.97,6.82H.43l7.73-8.84L0,0h6.83l4.71,6.23L16.99,0Zm-1.16,17.52h1.83L5.83,1.88h-1.97l11.97,15.64Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 18 18"><path d="M5,0A5,5,0,0,0,0,5v8a5,5,0,0,0,5,5h8a5,5,0,0,0,5-5V5a5,5,0,0,0-5-5ZM5,2h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2Zm9,1a1,1,0,1,0,1,1A1,1,0,0,0,14,3ZM9,4a5,5,0,1,0,5,5A5,5,0,0,0,9,4ZM9,6A3,3,0,1,1,6,9,3,3,0,0,1,9,6Z"></path></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="fill-current width-5 height-5" viewBox="0 0 43.1 32"><path d="M41.9,5.5a5.69,5.69,0,0,0-4.5-4.3A88.93,88.93,0,0,0,21.4,0,90.2,90.2,0,0,0,5.3,1.2,5.55,5.55,0,0,0,.8,5.5,65.9,65.9,0,0,0,0,16,54.4,54.4,0,0,0,.9,26.5a5.69,5.69,0,0,0,4.5,4.3A91.89,91.89,0,0,0,21.5,32a91.89,91.89,0,0,0,16.1-1.2,5.55,5.55,0,0,0,4.5-4.3,76.19,76.19,0,0,0,1-10.5A69.63,69.63,0,0,0,41.9,5.5ZM16,23V9l12.2,7Z"></path></svg></a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="bottom-footer">
+            <div class="copyright">&copy; 2024 Your Company. All rights reserved.</div>
+            <div class="mode-toggle">
+                <label>
+                    <input type="checkbox" id="mode-toggle">
+                    Dark Mode
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
