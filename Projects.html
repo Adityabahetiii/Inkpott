@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reports</title>
+    <title>Project</title>
 
 
     <style>
@@ -332,9 +332,9 @@
     <div class="breadcrumb">
         <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Homepage.html">Home</a> <span>&gt;</span>
         <a href="C:\Users\Aditya Baheti\Desktop\New folder (3)\Developers.html">Developers</a> <span>&gt;</span>
-        <span>Reports</span>
+        <span>Projects</span>
     </div>
-    <div class="heading">Reports</div>
+    <div class="heading">Projects</div>
     <div class="container">
         <div class="head">
             <h3>Notes</h3>
@@ -402,141 +402,7 @@
                     <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">string</span></td>
                     <td>The password for the report page. Only works with privacy set to <code>2</code>.</td>
                 </tr>
-                <tr>
-                    <td><code>password</code></td>
-                    <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">string</span></td>
-                    <td>The password for the report page. Only works with privacy set to <code>2</code>.</td>
-                </tr>
-                <tr>
-                    <td><code>password</code></td>
-                    <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">string</span></td>
-                    <td>The password for the report page. Only works with privacy set to <code>2</code>.</td>
-                </tr>
-            </tbody>
-            
-        </table>
-        
-    </div>
-    <div class="container">
-        <div class="head">
-            <h3>Show</h3>
-        </div>
-        <div class="sec-divider"></div>
-        <h>API endpoint:</h>
-        <p class="api-endpoint">
-            <span class="post-badge">POST</span>
-            https://phprank.lunatio.com/api/v1/reports
-        </p>
-        <h>Request Example:</h>
-        <div class="code-box">
-            curl --location --request POST 'https://phprank.lunatio.com/api/v1/reports' \<br>
-            --header 'Content-Type: application/x-www-form-urlencoded' \<br>
-            --header 'Authorization: Bearer <span class="text-success">{api_key}</span> \<br>
-            --data-urlencode 'url=<span class="text-success">{url}</span>'
-        </div>
-        
-        
-    </div>
-    <div class="container">
-        <div class="head">
-            <h3>Store</h3>
-        </div>
-        
-        <div class="sec-divider"></div>
-        <h>API endpoint:</h>
-        <p class="api-endpoint">
-            <span class="post-badge">POST</span>
-            https://phprank.lunatio.com/api/v1/reports
-        </p>
-        <h>Request Example:</h>
-        <div class="code-box">
-            curl --location --request POST 'https://phprank.lunatio.com/api/v1/reports' \<br>
-            --header 'Content-Type: application/x-www-form-urlencoded' \<br>
-            --header 'Authorization: Bearer <span class="text-success">{api_key}</span> \<br>
-            --data-urlencode 'url=<span class="text-success">{url}</span>'
-        </div>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th class="Parameter">Parameter</th>
-                    <th class="type">Type</th>
-                    <th>Description</th>
-                </tr>
                 
-            </thead>
-            <tbody>
-                
-                <tr>
-                    <td><code>url</code></td>
-                    <td class="type-container"><span class="param-required">required</span> <span class="param-string">string</span></td>
-                    <td>The webpage's URL.</td>
-                    
-                </tr>
-                
-                <tr>
-                    <td><code>privacy</code></td>
-                    <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">integer</span></td>
-                    <td class="privacy">Report page privacy. Possible values are: <code>0</code> for Public, <code>1</code> for Private, <code>2</code> for Password. Defaults to: <code>0</code>.</td>
-                </tr>
-                <tr>
-                    <td><code>password</code></td>
-                    <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">string</span></td>
-                    <td>The password for the report page. Only works with privacy set to <code>2</code>.</td>
-                </tr>
-            </tbody>
-            
-        </table>
-        
-    </div>
-    <div class="container">
-        <div class="head">
-            <h3>Update</h3>
-        </div>
-        
-        <div class="sec-divider"></div>
-        <h>API endpoint:</h>
-        <p class="api-endpoint">
-            <span class="post-badge">POST</span>
-            <span class="post-badge">PATCH</span>
-            https://phprank.lunatio.com/api/v1/reports
-        </p>
-        <h>Request Example:</h>
-        <div class="code-box">
-            curl --location --request POST 'https://phprank.lunatio.com/api/v1/reports' \<br>
-            --header 'Content-Type: application/x-www-form-urlencoded' \<br>
-            --header 'Authorization: Bearer <span class="text-success">{api_key}</span> \<br>
-            --data-urlencode 'url=<span class="text-success">{url}</span>'
-        </div>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th class="Parameter">Parameter</th>
-                    <th class="type">Type</th>
-                    <th>Description</th>
-                </tr>
-                
-            </thead>
-            <tbody>
-                
-                <tr>
-                    <td><code>url</code></td>
-                    <td class="type-container"><span class="param-required">required</span> <span class="param-string">string</span></td>
-                    <td>The webpage's URL.</td>
-                    
-                </tr>
-                
-                <tr>
-                    <td><code>privacy</code></td>
-                    <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">integer</span></td>
-                    <td class="privacy">Report page privacy. Possible values are: <code>0</code> for Public, <code>1</code> for Private, <code>2</code> for Password. Defaults to: <code>0</code>.</td>
-                </tr>
-                <tr>
-                    <td><code>password</code></td>
-                    <td class="type-container"><span class="param-optional">optional</span> <span class="param-string">string</span></td>
-                    <td>The password for the report page. Only works with privacy set to <code>2</code>.</td>
-                </tr>
             </tbody>
             
         </table>
